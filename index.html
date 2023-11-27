@@ -12,6 +12,7 @@
 <body>
     <div id="app">
         <div class="container">
+            <input type="text" v-model="newTodo" @keyup.enter="storeTodo">
             <ul>
                 <li class="list-element" v-for="(todo, index) in todos" :key="index">
                     {{ todo.text }}
